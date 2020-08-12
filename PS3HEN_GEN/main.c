@@ -5,6 +5,7 @@
 #include <stdlib.h>
 #include <fcntl.h>
 #include <inttypes.h>
+#include <heninterfaces>
 
 static uint64_t swap64(uint64_t data)
 {
@@ -38,7 +39,7 @@ int main(int argc, char **argv)
 		return -1;
 	}
 	
-	struct stat buffer;
+	- struct stat buffer;
 	int status;
 	uint32_t truncate_len=0x110000;
 
